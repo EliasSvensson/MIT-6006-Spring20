@@ -1,0 +1,32 @@
+# Ensure all text files use LF line endings
+* text=auto eol=lf
+
+# Python source files
+*.py text eol=lf
+
+# Jupyter notebooks (treated as binary to avoid messy diffs)
+*.ipynb binary
+
+# Markdown and text files
+*.md text eol=lf
+*.txt text eol=lf
+
+# Ignore diffing for data files
+*.csv binary
+*.tsv binary
+*.json text eol=lf
+
+# Images and other binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.pdf binary
+
+# Optional: enforce consistent behavior for shell scripts
+*.sh text eol=lf
+
+# Optional: treat config files as text
+*.editorconfig text eol=lf
+*.gitignore text eol=lf
